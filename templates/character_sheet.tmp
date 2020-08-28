@@ -1,0 +1,31 @@
+<div class="stat_block">
+	<h1>{{ .Name }}</h1>
+	<hr>
+	<table>
+		<tr>
+			<td>STR</td>
+			<td>{{ index .Stats 0 }}</td>
+		</tr>
+		<tr>
+			<td>DEX</td>
+			<td>{{ index .Stats 1 }}</td>
+		</tr>
+		<tr>
+			<td>CON</td>
+			<td>{{ index .Stats 2 }}</td>
+		</tr>
+		<tr>
+			<td>INT</td>
+			<td>{{ index .Stats 3 }}</td>
+		</tr>
+		<tr>
+			<td>WIS</td>
+			<td>{{ index .Stats 4 }}</td>
+		</tr>
+		<tr>
+			<td>CHA</td>
+			<td>{{ index .Stats 5 }}</td>
+		</tr>
+	</table>
+	<p>{{ .Desc }}</p>
+</div>
