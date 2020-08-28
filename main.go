@@ -28,6 +28,7 @@ func makeServer() *http.Server {
 
 	mux := http.NewServeMux()
 
+	mux.Handle("/", http.FileServer(http.Dir("./static")))
 	mux.HandleFunc("/ping", ping)
 	mux.HandleFunc("/char", getCharData)
 
