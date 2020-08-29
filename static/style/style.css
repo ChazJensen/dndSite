@@ -1,0 +1,65 @@
+
+
+.char-sheet {
+  width: 50%;
+
+  border: 1px solid black;
+
+  text-align: center;
+  padding: 20px;
+
+}
+
+.char-sheet h1 {
+  display: block;
+  text-align: center;
+}
+
+.char-stat-array {
+  background-color: lightgrey;
+  border: 1px solid grey;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2vh 2vw;
+
+
+/* TODO: media query to make sure text is legible
+this will probably happen on the "Medium" breakpoint
+and will have the effect of turning the direction
+vertical*/
+  width: 30%;
+}
+
+.char-stat {
+  width: 100px;
+  height: 100px;
+
+  display: grid;
+  align-items: center;
+  grid-template-rows: 60% 20% 20%;
+}
+
+.char-stat div:first-child {
+  background-image: radial-gradient(circle closest-side at center, purple, lightgrey);
+}
+
+.char-stat div {
+  align-self: stretch;
+}
+
+.stat-mod {
+  display: block;
+  position: relative;
+  /* height: 50%; */
+
+  font-size: 1.75em;
+  line-height: 50px;
+
+  top: 50%;
+  margin-top: -25px;
+}

@@ -1,0 +1,6 @@
+<!-- uses Stat object -->
+<div class="char-stat">
+  <div><span class="stat-mod">{{ .Mod }}</span></div>
+  <div><span>{{ .Score }}</span></div>
+  <div><span>{{ .Name }}</span></div>
+</div>
